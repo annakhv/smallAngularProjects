@@ -1,0 +1,31 @@
+
+<header><h1>{{name}}</h1> </header>
+
+<main>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">title</th>
+            <th scope="col">score</th>
+            <th scope="col">members</th>
+            <th scope="col">synopsis</th>
+            <th scope="col"><button (click)="toggle($event)">image</button></th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let data of result; index as i" >
+            <th scope="row">{{i+1}}</th>
+            <td>{{data.title}}</td>
+            <td>{{data.score}}</td>
+            <td>{{data.members}}</td>
+            <td>{{data.synopsis}}</td>
+            <td [ngClass]="showHide"><img [src]="data.image_url" /></td>
+          </tr>
+ 
+        </tbody>
+      </table>
+
+
+</main>
