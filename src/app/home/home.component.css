@@ -1,0 +1,21 @@
+
+section {
+    background-color: rgb(255, 249, 242);
+    border-radius: 5px;
+}
+
+
+
+.params {
+     
+  height: 300px;
+  width: 300px;
+  
+ 
+
+}
+
+.params:hover{
+    background-color: bisque;
+    border-radius: 5px;
+}
