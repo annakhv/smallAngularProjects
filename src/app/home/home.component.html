@@ -1,11 +1,22 @@
 
 <section class="container p-4"> 
 <div class="row">
-<div  class="col-md-4 params" *ngFor="let data of listArticles" >
-    <div >
-     <h4> {{data.title}}</h4>
-     {{data.author}}
-     
+<div  class="col-md-4 params p-3" *ngFor="let data of listArticles" >
+    <div  >
+        <a [href]="data.title">
+        <img  class="icons img-responsive" [src]="data.urlToImage" />
+  
+     <h5> {{data.title}}</h5>
+    </a> 
+     <h6>{{data.publishedAt}}</h6> 
+    
+<br/>
+     <div class="row p-2 ">
+    <h6 class="col-sm-5">source: {{data.source.name}}</h6>
+    <a class="col-sm-5" [href]="data.url">click for more</a>
+
+</div>
+   
     </div>
 </div>
     </div>

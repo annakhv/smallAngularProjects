@@ -2,14 +2,16 @@
 section {
     background-color: rgb(255, 249, 242);
     border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 
 .params {
      
-  height: 300px;
-  width: 300px;
+  max-height: 500px;
+  width: 400px;
+
   
  
 
@@ -18,4 +20,12 @@ section {
 .params:hover{
     background-color: bisque;
     border-radius: 5px;
+    
+}
+
+
+.icons {
+  max-height: 200px;
+  width: 300px;
+  border-radius: 5px;
 }
