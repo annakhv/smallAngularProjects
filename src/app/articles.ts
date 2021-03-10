@@ -11,7 +11,7 @@ export interface IArticles  {
   title : string,
   description :string,
   url : string,
-  urlToImage : string,
+  urlToImage: string,
   publishedAt : string,
   content: string
 

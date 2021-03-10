@@ -9,8 +9,9 @@ exports.__esModule = true;
 exports.HomeComponent = void 0;
 var core_1 = require("@angular/core");
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(_DataService) {
+    function HomeComponent(_DataService, router) {
         this._DataService = _DataService;
+        this.router = router;
         this.listArticles = [];
     }
     HomeComponent.prototype.ngOnInit = function () {
@@ -22,6 +23,9 @@ var HomeComponent = /** @class */ (function () {
                 console.log(responce.articles);
             }
         });
+    };
+    HomeComponent.prototype.onclick = function (data) {
+        this.router.navigate(['details/', data.title]);
     };
     HomeComponent = __decorate([
         core_1.Component({

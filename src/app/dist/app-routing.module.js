@@ -16,7 +16,7 @@ var page_not_found_component_1 = require("./page-not-found/page-not-found.compon
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
-    { path: 'details/:id', component: details_component_1.DetailsComponent },
+    { path: 'details/:title', component: details_component_1.DetailsComponent },
     { path: 'test', component: test_component_1.TestComponent },
     { path: "**", component: page_not_found_component_1.PageNotFoundComponent }
 ];
